@@ -1,0 +1,102 @@
+export const Colors = {
+  dark: {
+    background: '#0A0A0F',
+    surface: '#13131A',
+    surfaceLight: '#1C1C26',
+    surfaceGlass: 'rgba(255,255,255,0.06)',
+    primary: '#6C63FF',
+    primaryLight: '#8B83FF',
+    primaryDark: '#5046E4',
+    secondary: '#00D9FF',
+    secondaryLight: '#33E1FF',
+    accent: '#FF6B6B',
+    accentGreen: '#00E676',
+    accentYellow: '#FFD740',
+    accentOrange: '#FF9100',
+    text: '#FFFFFF',
+    textSecondary: '#A0A0B2',
+    textTertiary: '#6B6B80',
+    border: 'rgba(255,255,255,0.08)',
+    borderLight: 'rgba(255,255,255,0.12)',
+    card: '#16161F',
+    cardGlass: 'rgba(255,255,255,0.04)',
+    success: '#00E676',
+    warning: '#FFD740',
+    error: '#FF5252',
+    info: '#448AFF',
+    tabBar: '#0D0D14',
+    gradient: ['#6C63FF', '#00D9FF'] as readonly [string, string],
+    gradientAccent: ['#FF6B6B', '#FF9100'] as readonly [string, string],
+    gradientGreen: ['#00E676', '#00BCD4'] as readonly [string, string],
+    shadow: 'rgba(0,0,0,0.5)',
+  },
+  light: {
+    background: '#F5F6FA',
+    surface: '#FFFFFF',
+    surfaceLight: '#F0F1F5',
+    surfaceGlass: 'rgba(255,255,255,0.7)',
+    primary: '#6C63FF',
+    primaryLight: '#8B83FF',
+    primaryDark: '#5046E4',
+    secondary: '#00B8D4',
+    secondaryLight: '#26C6DA',
+    accent: '#FF5252',
+    accentGreen: '#00C853',
+    accentYellow: '#FFC107',
+    accentOrange: '#FF6D00',
+    text: '#1A1A2E',
+    textSecondary: '#5C5C7A',
+    textTertiary: '#9E9EB8',
+    border: 'rgba(0,0,0,0.08)',
+    borderLight: 'rgba(0,0,0,0.04)',
+    card: '#FFFFFF',
+    cardGlass: 'rgba(255,255,255,0.9)',
+    success: '#00C853',
+    warning: '#FFC107',
+    error: '#FF5252',
+    info: '#2979FF',
+    tabBar: '#FFFFFF',
+    gradient: ['#6C63FF', '#00B8D4'] as readonly [string, string],
+    gradientAccent: ['#FF5252', '#FF6D00'] as readonly [string, string],
+    gradientGreen: ['#00C853', '#00ACC1'] as readonly [string, string],
+    shadow: 'rgba(0,0,0,0.1)',
+  },
+};
+
+export type ThemeColors = typeof Colors.dark;
+export type ThemeMode = 'dark' | 'light' | 'system';
+
+export const Spacing = {
+  xs: 4,
+  sm: 8,
+  md: 16,
+  lg: 24,
+  xl: 32,
+  xxl: 48,
+};
+
+export const BorderRadius = {
+  sm: 8,
+  md: 12,
+  lg: 16,
+  xl: 24,
+  full: 999,
+};
+
+export const FontSize = {
+  xs: 11,
+  sm: 13,
+  md: 15,
+  lg: 17,
+  xl: 20,
+  xxl: 28,
+  hero: 36,
+};
+
+export const FontWeight = {
+  regular: '400' as const,
+  medium: '500' as const,
+  semibold: '600' as const,
+  bold: '700' as const,
+  heavy: '800' as const,
+};
