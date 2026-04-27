@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAppStore } from '../store/appStore';
 
 // Change this to your backend URL
-const BASE_URL = 'http://192.168.100.7:5000/api';
+const BASE_URL = 'http://localhost:5000/api';
 
 const api = axios.create({
   baseURL: BASE_URL,
